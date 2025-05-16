@@ -1,64 +1,61 @@
-import React from "react";
-import {
-  FaHandshake,
-  FaHeart,
-  FaHome,
-  FaGem,
-  FaEnvelope,
-} from "react-icons/fa";
+import React from 'react';
+import { FaHandshake, FaHeart, FaHome, FaGem, FaEnvelope } from 'react-icons/fa';
 
 const events = [
   {
-    icon: <FaHandshake className="text-white text-3xl" />,
-    title: "Πρώτη Γνωριμία",
-    date: "01.06.2020",
+    date: 'August 7, 2022',
+    description: 'We meet for the first time',
+    icon: <FaHandshake />,
   },
   {
-    icon: <FaHeart className="text-white text-3xl" />,
-    title: "Ερωτευτήκαμε",
-    date: "15.07.2020",
+    date: 'September 28, 2022',
+    description: 'The love story begins',
+    icon: <FaHeart />,
   },
   {
-    icon: <FaHome className="text-white text-3xl" />,
-    title: "Συγκατοίκηση",
-    date: "01.03.2021",
+    date: 'November 22, 2023',
+    description: "Let's move together",
+    icon: <FaHome />,
   },
   {
-    icon: <FaGem className="text-white text-3xl" />,
-    title: "Πρόταση Γάμου",
-    date: "25.12.2023",
+    date: 'February 17, 2024',
+    description: 'The proposal',
+    icon: <FaGem />,
   },
   {
-    icon: <FaEnvelope className="text-white text-3xl" />,
-    title: "Γάμος!",
-    date: "21.08.2028",
+    date: 'Right Now',
+    description: 'You reading our invitation',
+    icon: <FaEnvelope />,
   },
 ];
 
 export default function Timeline() {
   return (
-    <section
-      className="py-32 px-6 md:px-12 text-white overflow-hidden"
-      style={{ backgroundColor: "rgb(30,25,22)" }}
-    >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
-        {/* Timeline list */}
-        <div className="w-full md:w-2/3 space-y-16">
-          {events.map((event, index) => (
-            <div key={index} className="flex items-center gap-6">
-              <div className="bg-[#6c4c1c] p-5 rounded-full shadow-lg">
-                {event.icon}
+    <section className="py-24 px-6 text-white" style={{ backgroundColor: 'rgb(30, 25, 22)' }}>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-stretch justify-between relative">
+
+        {/* Timeline - αριστερά */}
+        <div className="relative w-full md:w-2/3">
+          <div className="absolute left-5 top-0 bottom-0 w-1 bg-gray-700"></div>
+
+          <div className="pl-12">
+            {events.map((event, i) => (
+              <div key={i} className="relative mb-20">
+                <div className="absolute left-0 top-0 transform -translate-x-1/2 bg-black border-4 border-white rounded-full w-14 h-14 flex items-center justify-center text-2xl text-white z-10">
+                  {event.icon}
+                </div>
+
+                <div className="bg-white text-gray-800 p-10 rounded-xl shadow-xl max-w-2xl ml-10">
+                  <p className="text-xl mb-2">{event.date}</p>
+                  <p className="text-2xl font-semibold">{event.description}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-4xl font-serif mb-1">{event.title}</h3>
-                <p className="text-2xl text-gray-300">{event.date}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Timeline image */}
-        <div className="w-full md:w-1/3 flex justify-center md:justify-end">
+        {/* timeline.png - δεξιά */}
+        <div className="w-full md:w-1/3 flex items-center justify-center md:justify-end">
           <img
             src="/images/timeline.png"
             alt="timeline"
