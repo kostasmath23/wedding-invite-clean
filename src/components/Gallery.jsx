@@ -63,7 +63,7 @@ export default function Gallery() {
           {/* Κείμενο */}
           <div className="md:w-1/2 text-center md:text-left">
             <h3 className="text-5xl md:text-6xl font-serif mb-4">Τα ταξίδια μας</h3>
-            <p className="text-2xl md:text-3xl text-gray-600">Παρίσι | Μαλδίβες | Αμερική</p>
+            <p className="text-2xl md:text-3xl text-gray-600">Γαλλία | Ισπανία | Πολωνία | Γερμανία</p>
           </div>
         </div>
 
