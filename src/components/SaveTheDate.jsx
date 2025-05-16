@@ -7,9 +7,9 @@ export default function SaveTheDate() {
     <section className="bg-[#eae6df] py-64 px-4 text-gray-800 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-start">
 
-        {/* Αριστερά: flower + deco με responsive parallax */}
+        {/* Αριστερά: flower + deco με responsive horizontal parallax */}
         <div className="w-full md:w-[calc(50%-160px)] flex flex-col md:flex-row items-start gap-10 mb-10 md:mb-0">
-          <Parallax translateY={[40, -40]} className="w-full md:w-80 h-auto">
+          <Parallax translateX={[-30, 30]} className="w-full md:w-80 h-auto">
             <img
               src="/images/flower.png"
               alt="flower"
@@ -17,7 +17,7 @@ export default function SaveTheDate() {
             />
           </Parallax>
 
-          <Parallax translateY={[-40, 40]} className="w-full md:w-96 h-auto">
+          <Parallax translateX={[30, -30]} className="w-full md:w-96 h-auto">
             <img
               src="/images/deco.png"
               alt="decoration"
