@@ -38,7 +38,7 @@ export default function SaveTheDate() {
         {/* Δεξιά: Κείμενο */}
         <div className="w-full md:w-[calc(50%-160px)] flex flex-col items-start text-left gap-8">
           <h2 className="text-6xl md:text-7xl font-serif">Save The Date</h2>
-          <p className="text-7xl md:text-8xl font-extrabold tracking-wide">21.08.2028</p>
+          <p className="text-7xl md:text-8xl font-extrabold tracking-wide">27.09.2025</p>
           <FaCalendarCheck className="text-6xl" />
         </div>
       </div>
