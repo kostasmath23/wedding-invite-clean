@@ -13,7 +13,7 @@ export default function SaveTheDate() {
             <img
               src="/images/flower.png"
               alt="flower"
-              className="w-full max-w-[180px] mx-auto md:max-w-full md:mx-0"
+              className="w-full max-w-[100px] mx-auto md:max-w-full md:mx-0"
             />
           </Parallax>
 
@@ -21,7 +21,7 @@ export default function SaveTheDate() {
             <img
               src="/images/deco.png"
               alt="decoration"
-              className="w-full max-w-[200px] mx-auto md:max-w-full md:mx-0"
+              className="w-full max-w-[110px] mx-auto md:max-w-full md:mx-0"
             />
           </Parallax>
         </div>
