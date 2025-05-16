@@ -17,7 +17,7 @@ export default function ChurchMap() {
         >
           <h2 className="text-7xl font-serif mb-6">Το μυστήριο</h2>
           <hr className="border-t border-gray-400 w-1/2 mx-auto mb-6" />
-          <p className="text-4xl font-semibold mb-2">Ιερός Ναός Αγίου Δημητρίου</p>
+          <p className="text-4xl font-semibold mb-2">Ιερός Ναός Αγίας Κυριακής</p>
           <p className="text-3xl mb-10">7:00 μ.μ.</p>
 
           <div className="w-full aspect-video mb-10 rounded-lg overflow-hidden">
