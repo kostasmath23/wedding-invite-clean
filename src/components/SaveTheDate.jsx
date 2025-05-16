@@ -9,19 +9,19 @@ export default function SaveTheDate() {
 
         {/* Αριστερά: flower + deco με responsive parallax */}
         <div className="w-full md:w-[calc(50%-160px)] flex flex-col md:flex-row items-start gap-10 mb-10 md:mb-0">
-          <Parallax translateY={[40, -40]} className="w-80 h-auto">
+          <Parallax translateY={[40, -40]} className="w-full md:w-80 h-auto">
             <img
               src="/images/flower.png"
               alt="flower"
-              className="w-80 h-auto mx-auto md:mx-0"
+              className="w-full max-w-[280px] mx-auto md:mx-0"
             />
           </Parallax>
 
-          <Parallax translateY={[-40, 40]} className="w-96 h-auto">
+          <Parallax translateY={[-40, 40]} className="w-full md:w-96 h-auto">
             <img
               src="/images/deco.png"
               alt="decoration"
-              className="w-96 h-auto mx-auto md:mx-0"
+              className="w-full max-w-[320px] mx-auto md:mx-0"
             />
           </Parallax>
         </div>
