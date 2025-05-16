@@ -59,7 +59,7 @@ export default function Timeline() {
           <img
             src="/images/timeline.png"
             alt="timeline"
-            className="w-[600px] max-w-[600px] h-auto animate-pulse translate-x-24"
+            className="w-[400px] max-w-[400px] h-auto animate-pulse translate-x-24"
           />
         </div>
       </div>

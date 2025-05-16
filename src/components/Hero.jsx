@@ -11,7 +11,7 @@ export default function Hero() {
           data-aos="fade-up"
         >
           <h1 className="text-6xl md:text-7xl font-serif text-gray-800 mb-14 text-center">
-            Αντώνης & Μαρία
+            Θοδωρής & Έννη
           </h1>
           <hr className="my-10 border-gray-300" />
           <p className="text-2xl md:text-3xl text-gray-700 mb-14 text-center">

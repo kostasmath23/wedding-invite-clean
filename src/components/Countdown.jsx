@@ -2,7 +2,7 @@ import React from 'react';
 import Countdown from 'react-countdown';
 
 export default function Timer() {
-  const weddingDate = new Date('2025-08-10T19:00:00');
+  const weddingDate = new Date('2025-09-27T17:00:00');
 
   const renderer = ({ days, hours, minutes, seconds }) => (
     <div className="bg-[#eae6df] py-24 px-4">
